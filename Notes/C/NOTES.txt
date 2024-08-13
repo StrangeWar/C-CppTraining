@@ -1,0 +1,773 @@
+who is developer of c:
+    Dennis Ritchie
+
+Tokens: 
+    smallest unit of c or c++ program is called tokens.
+    tokkens are also called Lexical elements.
+
+Parser: 
+    Parser is a program whose job is to separate these tokens.
+
+Data Type:
+    Data type means type of data in programming.
+    it is mainly of two types:
+        1. Primitive:
+            It doesn't depend on other data type:
+            Ex: char, float, int, long, double
+        
+        2. Non Primitive:
+            It is depend on Primitive data type.
+            Ex: string, array.
+        
+        3. User define:
+            It is a data type define by user's itself.
+            Ex: structure, union, enum
+
+To print size of any data type we use sizeof() operator.
+
+
+scanf():-
+    scanf() is a function which is used to take formated input from user.
+    scanf() is a library function.
+    it returns number of inputs given by usesr.
+    To get a address of any variable we need to use '&' M-percent sign.
+    we can use separater for more than one inputs.
+
+
+variable:
+    Name of memory location is called variable.
+    variable is used to store any type of data.
+
+    static variable:
+        -static variable is a variable which is declared inside a function but it is not local to that function
+        -it is a global variable.
+        -it is used to store the value of a variable between function calls.
+
+    Non-static variable:
+        -Non-static variable is a variable which is declared inside a function and it is local to that
+        function.
+
+
+Decleration/Definition:
+    When compiler reserve memory location for variable then it is called variable decleration.
+
+    Syntax:
+        data_type variable_name;
+        ex:
+            int x;
+            bool y;
+            float ch;
+
+    Two types of Decleration:
+        1. Compile time.
+        2. Run-time.
+    
+    NOTE: Re-defination is not allowed inside same scope.
+
+Initialization:
+    When we assign value to variable then it is called initialization.
+    
+    Syntax:
+        variable_name = value;
+        ex:
+            x = 12;
+            y = true;
+
+    NOTE: Re-initialization is allowed.
+
+Decleration and Initialization:
+    When we declere and initialize variable at same time then it is called decleration and initialization.
+
+    Syntax:
+        data_type variable_name = value;
+        ex:
+            int x = 12;
+            bool y = true;
+Constant:
+    When we assign value to variable then it is called constant.
+    Constant is a variable which can not be changed.
+    Constant is also called literal.
+    
+    ex: 12,4,6, "hi", true, false
+
+    Types:
+        1. Integer constant.
+        2. Floating point constant.
+        3. Character constant.
+        4. String constant.
+        5. Boolean constant.
+
+Storage class:
+    Storage class says that how variable are store in memory.
+    There are 4 types of storage class.
+    1. Auto:
+        auto keyword referes automatic type of variable.
+        It store data
+    2. Register.
+        It store data in register.
+
+    3. Static.
+        It store data in memory.
+
+    4. External.
+        It tells compiler that variable is initialize some where else in the program or some another file.
+
+Escape Sequence:
+    \n: next line
+    \t: tab
+    \b: backspace
+    \r: carriage return
+    \f: form feed
+    \\: print one backslash
+    \": use for printing ".
+    \': use for printing '.
+
+
+operators:
+    It is used to perform operations between one or more operands.
+    operands are the value or variables where operators are used for.
+
+    There are 4 types of operators:
+    1. Arithmetic operators:
+        +: addition
+        -: subtraction
+        *: multiplication
+        /: division
+        %: modulus
+    2. Relational operators:
+        ==: equal to
+        !=: not equal to
+        >: greater than
+        <: less than
+        >=: greater than or equal to
+        <=: less than or equal to
+
+    3. Logical operators:
+        &&: and
+        ||: or
+        !: not
+
+    4. Assignment operators:
+        =: assign
+        +=: add and assign
+        -=: subtract and assign
+        *=: multiply and assign
+        /=: divide and assign
+        %=: modulus and assign
+        &=: bitwise and assign
+        |=: bitwise or assign
+        ^=: bitwise xor assign
+        <<=: left shift and assign
+        >>=: right shift and assign
+
+    4. Bitwise operators:
+        &: bitwise and (it return 1 both bits are on).
+        |: bitwise or (it return 0 both bits are on).
+        ^: bitwise xor
+ 
+
+        b1              b2              b1&b2                   |            b1         b2          b1||b2
+        0               0                 0                     |            0          0              0
+        0               1                 0                     |            0          1              1
+        1               0                 0                     |            1          0              1
+        1               1                 1                     |            1          1              1
+    
+        b1              b2              b1^b2
+        0               0                 0
+        0               1                 1
+        1               0                 1
+        1               1                 0
+      
+        <<: left shift (This operator shift all bits left side by n position.)
+            ex: 10 << 2 = 40, 10 << 3 = 80
+                10*2^2      , 10*2^3
+       
+        >>: right shift (This operator shift all bits right side by n position.)
+            ex: 10 >> 2 = 2, 32 >> 3 = 4, 27 >> 3 = 3
+                10/2^2     ,  10/2^3
+     
+    5. Unary operators:
+    
+        ++: increment (It increase the value by one.)
+            1.pre-increment: It increment the value first then assign.(++i)
+            2.post-increment: It first assign then increment the value.(i++)
+
+        --: decrement (It decrease the value by one.)
+            1.pre-decrement:It decrement the value first then assign.(--i)
+            2.post-decrement:It first assign then decrement the value.(i--)
+
+        +:
+        -:
+        !: Logical not
+        ~: bitwise not
+    
+    6. Ternary operator:
+       This operator required three operands.
+       It is used to assign a value to a variable based on a condition.
+       Syntax: condition ? expression1 : expression2;
+
+       code:
+                #include <stdio.h>
+
+                int main()
+                {
+                    int num;
+                    printf("Enter a number: ");
+                    scanf("%d", &num);
+                    (num % 2 == 0) ? printf("Even") : printf("Odd");
+                    return 0;
+                }
+
+Precedence of Operators:
+
+    Operators                   Precedence              Associativity
+    1. ()                        1                       Left to Right
+    2. !, ~, ++, --              2                       Right to Left
+    3. *, /, %, &                3                       Left to Right
+    4. +, -                      4                       Left to Right
+    5. <<, >>                    5                       Left to Right
+    6. <, <=, >, >=              6                       Left to Right
+    7. ==, !=                    7                       Left to Right
+    8. &                         8                       Left to Right
+    9. ^                         9                       Left to Right
+    10. |                        10                      Left to Right
+    11. &&                       11                      Left to Right
+    12. ||                       12                      Left to Right
+    13. ?:                       13                      Right to Left
+
+  
+Condition statements:
+
+1. if statement:
+    Syntax:
+        if(condition){
+            //code
+        }
+2. if-else statement:
+    Syntax:
+        if(condition){
+            //code
+            }
+        else{
+            //code
+            }
+
+3. if-else-if statement:
+        Syntax:
+            if(condition1){
+            //code
+            }
+            else if(condition2){
+                //code
+                }
+            else{
+                //code
+            }
+
+4. switch statement:
+    It is mainly used for lot of conditions.
+    we can only use int,char, or enum type of data inside switch() statement.
+    switch() shows fall-through behavior:
+        That means when we not use break statement inside switch() than it execute all the cases without checking there conditions.
+
+        Syntax:
+            switch(expression){
+                case value1:
+                //code
+                break;
+                case value2:
+                //code
+                break;
+                default:
+                //code
+                break;
+                }
+
+
+enum:
+    enum is a user defined datatype which is used to store the set of related values.
+    enum is a keyword in c++.
+
+
+Loops:
+    It execute some code 'n' number of time until the condition is true.
+
+    Infinite loop: when we give incorrect condition or condition is missing in our
+    loop than it will run infinitely which make program to crash.
+
+    There are three types of loops in c++:
+
+    1. for loop:
+            for loop check condition first and then it execute the code.
+    Syntax:
+        for(initialization;condition;increment/decrement){
+            //code
+        }
+   
+    2. while loop:
+            while loop check the condition first then execute the code.
+
+    Syntax:
+        while(condition){
+        //code
+        }
+    
+    3. do-while loop:
+            do-while loop execute the code first then check the condition.
+
+    Syntax:
+        do{
+            //code
+            increment/decrement
+            }while(condition);
+
+Jumping statements:
+
+    1. break: It is used to terminate the loop.
+    2. continue: It is used to skip the current iteration of the loop and continue with the next iteration.
+       It sends control to condition.
+    3. goto: It is used to jump to a label in the program.
+    
+What is preprocessor: 
+    Preprocessor is a program which is used to process the source code before compilation.
+    It is used to perform some operations on the source code like including header files, defining macros,
+    etc. It is a part of the compiler and is executed before the compilation process.
+
+    1. #include: It is used to include a header file in the program.
+    2. #define: It is used to define a macro in the program.
+    3. #if: It is used to check if a condition is true or false.
+    4. #ifdef: It is used to check if a macro is defined.
+    5. #ifndef: It is used to check if a macro is not defined.
+    6. #endif: It is used to end an #if, #ifdef, or #ifndef
+    7. #else: It is used to specify an alternative code to be executed if the condition in #if, #ifdef, or #ifndef is false.
+
+What is Array:
+    Array is a collection of similar data types which have same data type.
+    It ia non-Primitive data type.
+    It is used to store multiple values in a single variable.
+    It is a linear data structure( continuous memory allocation) which can store multiple values of same data type.
+
+    Syntax:
+        datatype arrayname[size];
+        datatype arrayname[size] = {value1, value2, value3, ...};
+        datatype arrayname[size] = {value1, value2, value3, ...};
+        int arr[5] = {1,2,3,4,5};
+
+------------------------------------------------------------------------------------------------------------------------------------
+DATE:11/07/2024
+------------------------------------------------------------------------------------------------------------------------------------
+2-D Array:
+    Array with two dimension is called 2-D array.
+    It is also called matric.
+
+    Syntax:
+    datatype arrayname[row][column];
+    datatype arrayname[row][column] = {{value1, value2, value3, ...},{value1,value2,value3,...}};
+
+    When we define an array then Compile assign grabage value to all index of array.
+    when we declere and initialize an array together then compiler assign '0' to all index of array.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+DATE:12/07/2024
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Character Array:
+    Array of character is called character array.
+    It is also called string.
+    There is no specific data type present in C called String.
+    Character Array ends with '\0'.
+    blank space or next line ' ','\n' is also consider as character.
+    '\0' is called null character.
+    '\0' is also called null terminator.
+    %s format specifier is used to print string in C.
+
+    Syntax:
+    char String_name[size];
+    char String_name[size] = {'v','i','v','e','k',\0'};
+    char String_name[size] = "vivek";
+
+
+    
+    String function:
+        strlen(): function is use to find length of string.
+        strcat(): function is use to concat strings.
+        strcmp(): function is use to compare two strings.
+        strcpy(): function is use to copy one string to another string.
+        strrev(): function is use to reverse string.
+        puts(): function is use to print string on consol window.
+        gets(): function is use to take input from user.
+            Syntax:
+            gets(arrayname);
+        
+        scanf() is used to take string as user input, but it terminate after space is hit.
+            Syntax:
+            scanf("%[^/n]s",arrayname);
+                This method is called scan-set method, to take user input, 
+                it says compiler to take user until new_line is not hitted.
+        
+        fgets() is used to take string as user input, but it terminate after new_line is hit.
+            fgets stands for file-get-string.
+            we need to pass three argument inside fgets() function. first one is
+            variable_name, second one is length of variable and last one is liberary name.
+        Syntax:
+            fgets(arrayname, size, stdin);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE:15/07/2024
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+POINTERS:
+
+    Pointer is a variable which stores address of another variable.
+   
+    Syntax:
+        datatype *variable_name;
+        datatype: datatype of variable which is stored in pointer.
+        variable_name: name of pointer variable.
+        *variable_name: address of variable which is stored in pointer.
+        *variable_name = &variable_name;
+    
+    example:
+        int *ptr = &x;
+
+    Types of Pointers:
+
+    1. Integer Pointer: pointer which stores address of integer variable.
+        Syntax:
+            int *ptr;
+    2. Float Pointer: pointer which stores address of float variable.
+        Syntax:
+            float *ptr;
+    3. Character Pointer: pointer which stores address of character variable.
+        Syntax:
+            char *ptr;
+    4. Double Pointer: pointer which stores address of double variable.
+        Syntax:
+            double *ptr;
+    5. Void Pointer: pointer which stores address of any variable.
+        void pointer is also called genric programming.
+
+        Syntax:
+             void *ptr;
+        ex:
+            void *ptr = (void *)&x;
+    
+    6. Dangling pointer:
+        Dangling pointer is a pointer which is pointing to a memory location which is no longer valid.
+        This pointer shows an undefined behaviour.
+        ex:
+            int *ptr = &x;
+            x = 10;
+            ptr = NULL;
+            printf("%d", *ptr);
+
+    7. NULL Pointer:
+        NULL pointer is a pointer which is pointing to a memory location which is not valid.
+        This pointer shows an undefined behaviour.
+        It is goood practice to define a pointer as NULL.
+        Avoid to create pointer as dangling pointer we can, assign pointer as NULL pointer.
+        ex:
+            int *ptr = NULL;
+    
+    8.  Wild Pointer:
+            Wild pointer is a pointer which is pointing to a incorrect memmory location.
+ 
+
+
+    Constant Pointer:
+        This type of pointer is define using const keyword.
+        Syntax:
+            const datatype *variable_name = &another_variable_name;
+
+    Reference(&):
+        Reference is also a variable which stores address of another variable.
+        Syntax:
+            datatype &variable_name = &another_variable_name;
+            example:
+             int &ref = &x;
+    
+    De-Reference(*):
+        De-Reference is used to access value of variable which is stored in pointer.
+        Syntax:
+            *variable_name;
+            example:
+                *ptr;
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE:16/07/2024
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+POINTER ARITHMETIC:
+    Pointer arithmetic is a process of performing arithmetic operation on pointer.
+    Pointer arithmetic is only applicable on pointer which is pointing to array.
+    Pointer arithmetic is not applicable on pointer which is pointing to a single variable.
+
+    1. Increment/Decrecement of pointer
+    2. Adding some integer value to pointer
+    3. Subtracting some integer value from pointer
+    4. Comparing two pointers
+
+
+Sizeof Pointer variable:
+
+    Sizeof pointer variable is varies with system architecture.
+    - In general for 32-bit system architecture sizeof pointer   variable is 4 bytes.
+    - In general for 64-bit system architecture sizeof pointer   variable is 8 bytes.
+
+
+NOTE: constant variable: constant variable is a variable which value can not be changed.
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE:17/07/2024
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FUNCTION:
+    Function is a block of code which is used to perform some specific task.
+    Function is also known as sub-routine.
+
+    Type of function:
+    1. Get nothing return nothing.
+        Syntax:
+            void function_name(){
+                //code
+            }
+
+    2. Get something return nothing.
+        Syntax:
+        void function_name(parameter){
+            //code
+            }
+
+    3. Get nothing return something.
+        Syntax:
+        data_type function_name(){
+            //code
+            return value;
+            }
+
+    4. Get something return something.
+        Syntax:
+        data_type function_name(parameter){
+            //code
+            return value;
+            }
+    
+    Function defination:
+        It is the term where function is actually defined.
+    
+    Function Prototype:
+        It is use to tell compiler that respected function is defined and use inside the entire code block.
+        Syntax:
+            data_type function_name(parameter);
+
+    Function Signature:
+        Function Signature contain the name and parameter of function.
+        Syntax:
+            function_name(data_type parameter);
+ 
+    Function call:
+        In function calling function is actually invoked from another function.
+        Syntax:
+            function_name(parameter);
+
+    All function in C and C++ are stored in Stack.
+    Stack use first last in first out (LIFO) property.
+
+    Recursion:
+        It is the process of calling function inside the function.
+
+    
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE:19/07/2024
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Static Allocation -: 
+ 
+//  Static allocation refers to the allocation of memory for variable at compile
+//  time , and remain fixed throughout the program's execution.
+
+// - In static allocation size and type of variable is determined before the program run.
+
+//  Memory is allocated on the stack or in data segment for static allocation.
+
+
+
+ #include <stdio.h>
+// This program is compile well but there is an logical error , beacause of we define array during compile time of size 
+//  "num" and during compile time we did not know that the value of "num" during compile we did to get the value of num
+//  beacause we use scanf() function to get the value of 'num' which is the size of array
+//there for , this program may shows an undfind behaviour
+     int main(){
+     	int num;
+     	scanf("%d\n", &num);
+     	
+     	int arr[num];
+	 return 0;
+	 }
+
+---------------------------------------------------------------------------------------------------------
+
+ DMA (Dynamic Memory Allocation) -: 
+
+//  DMA is a very powerfull tool in c/C++ programming language , it allow 
+// you to allocate and de-allocate variable during run-time.
+
+// -: DMA allocate memory inside heap. 
+//  - to achieve Dynamic allocation we need to use the following functions.
+
+1-: Malloc() -:
+  // Malloc is used to allocate "n" number of memory blocks in contigous order.
+  // malloc stand's for memory allocation
+  // it return NULL in case of fail to allocate memory.
+  // it return void pointer and we need to type of case it any associated data type.
+  // it assign garbage value to all elements of array.
+
+//   Syntax -: 
+       // data_type* ptr_name = (type_cast*)malloc(n* sizeof(data_type));
+
+
+    // 2-: Calloc():
+    // Calloc is also use to allocate memory during run time , there are total two argument we need to push inside calloc () function.
+    // - it also return NULL in case of fail to allocate memory.
+    // -It assign 0 to all index of allocated memory.
+
+    Syntax -:
+    // data_type ptr_name = (type_cast)calloc(n, sizeof(data_type) );
+
+    3-: Relloc 
+    // Relloc is use to re-allocate memory, which is previously allocated by malloc and calloc
+    // - realloc stands for re-allocation of memory. 
+    
+
+    4-: Free ()
+       // free is  use to  release the memory allocated by malloc and calloc in c program
+       Syntax-:
+
+       // free 
+
+Diffrence between Stack and Heap -:
+
+Stack                                                                   Heap
+
+// 1- Memory managed by compiler.                         1-: You need to manage the memory
+// 2- Small in size/ Limited storage                     2-: Large in sixe and further expandable.
+// 3- Access is eassier and fast                         3-: Slower than stack
+// 4-: Not Flexible means allocated can not be change    4-: Flexible and allocation memory can be alternate 
+// 5-: Elements scope is limited to there threads        5-: Elements scope is Global
+
+Mallloc-:
+
+#include <stdio.h>
+#include <stdlib.h>
+  int main(){
+    int* ptr = (int *)malloc(5 * sizeof(int) );
+
+    if(ptr== NULL)
+      printf("Fail:\n");
+      else
+      printf("Memory allocated successfully:\n");
+
+    int i=0;
+    while(i!=5){
+        printf("ptr[%d]", i);
+        scanf("%d", ptr+i);
+        i++;
+    }
+      i=0;
+      while(i!=5){
+        printf("%d\n", (ptr+i));
+        i++;
+      }
+    return 0;
+  }
+
+calloc -:
+
+    #include <stdio.h>
+    #include <stdlib.h>
+    int main(){
+        int* ptr = (int *)calloc(5, sizeof(int) );
+
+        if(ptr== NULL)
+        printf("Fail:\n");
+        else
+        printf("Memory allocated successfully:/n");
+
+        int i=0;
+        while(i!=5){
+            printf("ptr[%d]", i);
+            scanf("%d", ptr+i);
+            i++;
+        }
+        i=0;
+        while(i!=5){
+            printf("%d\n", (ptr+i));
+            i++;
+        }
+        return 0;
+    }
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE:23/07/2024
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+STRUCTURE:
+    -Structure is the user defined data type which is used to store the data of different data type in single memory location.
+    -Struct keyword is use to define a structure in c or c++.
+    -variables defined inside structure is called structure member.
+    -we can define any number of variable inside structure.
+    -By default memory is allocated for structure member is multiple of biggest data_type.
+    -To access structure member we need to use element of structure
+    -Dot(.) operator is use to access structure member using structure element.
+
+    Element of Structure:
+        -Element is a blue print of structure.
+        -Structure element is also known as instance for a structure.
+        -we can  define any number of structure element for a structure.
+        -For each structure member memory is allocated separately.
+
+    Syntax:
+        struct structure_name{
+            data_type variable_name;
+            data_type variable_name;
+            data_type variable_name;
+                   ||    ||
+                   ||    ||
+            };
+        
+        struct structure_name variable_name;
+
+
+    Padding:
+       -Padding is the process of adding extra memory to the structure member.
+       -Padding is done to make the memory allocation of structure member multiple of biggest data_type.
+       -Padding is done by compiler automatically.
+    
+    -By default Compile create a pack of size of bigger data type.
+    -we can use #pragma pack for custom packing of byte.
+    -we can create #pragma pack for sizeof bigger data type.
+
+Arrow Operator(->):
+        -Arrow operator is use to access member of structure using pointer type element.
+
+
+Self referential structure:
+    -Self referential structure is the structure which contain the pointer of same structure.
+    -Self referential structure is also known as circular structure.
+    -Self referential structure is used to store the address of itself.
+    -It is used to connect more than one element of structure.
+
+    example:
+    struct btech{
+        char name[20];
+        float cgpa;
+        struct btech *ptr;
+        };

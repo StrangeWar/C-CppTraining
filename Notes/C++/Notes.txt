@@ -1,0 +1,430 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+DATE:-25/07/2024
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+PROGRAMMING PARADIGM:   
+    Programming paradigm is a way or style to write a code, in computer language.
+
+    -There are many programming paradigm used in morden computer language some of them are following:
+    1. Functional Programming:
+       In this style of programming we breal down our code into small sub-program called Function,s.
+       ex:
+            C, C++, Ruby
+    
+    2. Object oriented programming:
+        In this style of programming we breal down our code into small sub-program called Object,s.
+        ex:
+            Java, C#, Python, PHP, JavaScript, Ruby, Perl;
+
+INPUT/OUTPUT:
+    count: 
+        -cout is a object define inside <iostream> liberary.
+        -cout is used to print the output on the screen.
+        -cout is a object of class ostream.
+        -output operator '<<' is use with cout object.
+        ex:
+            std::cout<<"";
+
+    Cin:
+        -cin is a object define inside <iostream> liberary.
+        -cin is used to take the input from the user.
+        -cin is a object of class istream.
+        -input operator '>>' is use with cin object.
+        ex:
+            std::cin>>"";
+            std::cin>>&var;
+        
+
+Object Oriented Programming System (OPP's) with C++ :
+    -Object Oriented Programming(OPP) is a programming paradigm that uses objects and classes to design
+      applications and computer programs based on real world entity.
+    
+    -It use concept of class and Object inside program.
+    -OPP's concept revolve around this four concept's also called piller of OPP's.
+    
+    -Class:
+        -Class is a user defined data type which is used to bind data member and member function together.
+        -Class is a blueprint of an object.
+        -Class is able to store hetrogeneous type of data.
+        -It allocate memory for object, in multiple of bigger data type.
+        
+        Syntax:
+            class class_name{
+                access modifiers:
+                //class body
+            }
+
+
+    -Object:
+        -Object is an instance of a class.
+        -Object is a runtime entity.
+        -for each object compiler reserve memory separetaly.
+
+        Syntax:
+            class_name object_name;
+        
+    -Member of class/Data member:
+        -All the variables defined inside class are called member of class.
+        -Member of class are data member and member function.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+DATE:-26/07/2024
+--------------------------------------------------------------------------------------------------------------------------------------
+
+CONSTRUCTOR:
+    -Constructor is a special member function of class which is used to initialize the object.
+    -Constructor is a function which have same name as class name.
+    -Constructor is called automatically when object is created.
+    -Constructor is used to initialize the object.
+    -Constructor didn't hava any return type.
+    -Constructor is envoke when object is created.
+    -We can overload a Constructor, that means two Constructor can have more than one defination.
+    -We can define Constructor with some parameter.
+
+    Data member:
+         -Data member is a variable which is defined inside class.
+
+    Member Function:
+         -Member function is a function which is defined inside class.
+
+    -Constructor are mainly of three types:
+        
+        1.Default Constructor:
+             -Default Constructor is a Constructor which doesn't have any parameter.
+
+        2.Parameterized Constructor:
+            -Parameterized Constructor is a Constructor which have some parameter.
+
+        3.Copy Constructor:
+            -Copy Constructor is a Constructor which is used to copy the value of one object to another object.
+            -When we pass object of a class as a parameter to another object of same class then it is called copy Constructor.
+
+            -When we not create defination of copy copy Constructor then compiler create it for us.
+
+    
+    this keyword:
+        -this keyword in C++ contain the address of respected object for which Constructor is called.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+DATE:- 29/07/2024
+---------------------------------------------------------------------------------------------------------------------------------------
+
+    Distructor:
+        -Distructor is a special member function of class which is used to destroy the object.      
+        -It called by compiler automatically, when no use of object's are left.
+        -we need to deallocated memory for dynamic object manually using delete keyword. delete(obj) 
+
+        Syntax:
+          ~ClassName(){ 
+            //code
+          }
+
+
+    Static data member:
+        -When a data member of a class is defined using static keyword then it is called static data member.
+        -Static data member is also called static data member.
+        -Static data member are distributed for all objects.
+        -It allocate memory for once in a program. 
+        -It is shared by all objects of a class.
+        -It is used to store the data which is common for all objects of a class.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+DATE:- 30/07/2024
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Static member function:
+    -Static member function is a function which is defined inside class and it is declared with static keyword.
+    -Static member function is also known as class method.
+    -we can call class method without any object.
+    -class method can access class member only.
+    -class method cannot access data member of a class.
+
+Initializers:
+    -Also known as Initializer list.
+    -It is used to initialize the data member of a class.
+    -It is used to initialize the static data member of a class.
+    
+-----------------------------------------------------------------------------------------------------------------------------------------
+DATE:- 31/07/2024
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+OOP's:
+
+There are four piller's of OPP's :
+
+    1. Encapsulation
+    2. Abstraction
+    3. Polymorphism
+    4. Inheritance
+
+
+
+ENCAPSULATION:
+    -Encapsulation is a concept of OOPs in which the data and methods are bind together.
+    -It is a process of hiding the internal details of an object from the outside world. 
+
+ABSTRACTION:
+    -Abstraction is a process of exposing the essential features of an object while hiding the non-essential details.
+
+    Example:
+        -A car is a complex system but when we drive a car we don't need to know
+        about the engine, gear box, etc. We only need to know how to drive the car
+        -So, abstraction is used to show only the essential features of an object.
+
+
+ACCESS MODIFIERS:
+    -Access modifiers are used to control the access of data and methods in a class.    
+    -In Cpp public, private and protected are use for hiding data.
+
+    1.Public:
+        -Public members are accessible from any where in the program.
+        -Public members are visible to all the classes in the program.
+        -Public members are used to provide services to the users of the class.
+
+    2.Private:
+        -Private members are accessible only within the class in which they are declared.
+        -Private members are not accessible from outside the class.
+        -Private members are used to hide the data.
+
+    3.Protected:
+        -Protected members are accessible within the class in which they are declared and also in the derived class.
+        -But not in the main function.
+        -Protected members are used to provide services to the derived class.
+
+
+POLYMORPHISM:
+    -Polymorphism is a concept of OOPs in which a single function can be used
+    to perform different operations.
+    -It is a process of creating multiple objects of a class with different
+    characteristics.
+
+    Types of polymorphism:
+        1.Compile Time(Static binding):
+            -Also know as Method overloading.
+            -It is a process of creating multiple methods with same name but different parameters.
+
+            Type:
+            1.Function overloading:
+                -Function overloading is a feature of C++ in which two or more functions can have the same name but different    parameters.
+                -can be done in same and different class.
+            
+            2.operator overloading:
+                -operator overloading is a feature of C++ in which we can use operators with user defined data type.
+                -can be done in same and different class.
+                -When one operator symbol is overloaded with multiple operations, it is known as overloaded operator.
+                -Some operator cant be overloaded:
+                    1.sizeof
+                    2.scope resolution operator(::)
+                    3.member access operator(.) and ->
+                    4.comma operator(,)
+                    5.type cast operator()
+                    6.new and delete operator
+                    7.ternary operator(?)
+
+
+        2.Run-time(Dynamic binding)/Function overriding:
+            -Also know as Method overriding.
+            -It is a process of creating a method in the derived class with same name and same parameters
+           
+            Type:
+
+            1.Virtual Function:
+                -Virtual function is a function which is declared in the base class and defined in the derived class
+                -It is used to achieve runtime polymorphism.
+                -It is declared with the keyword virtual.
+                -A virtual function is called during 
+
+                Rules for virtual function:
+
+                    1.Virtual function cannot be static.
+                    2.A virtual function can be a friend function of another class.
+                    3.virtual function should be accessed during using a pointer or reference of base class type to acheive runtime
+                     polymorphism.
+                    4.The prototype of virtual function should be the same in the base as well as the derived class.
+                    5.A class may have a virtual destructor but cannot have a virtual Constructor.
+                    6.Compile time (early binding) vs runtime (late binding) behaviour of virtual function.
+                     
+
+    Example:
+        -A car can be a sports car, a luxury car, a hatchback car, etc
+        -So, polymorphism is used to show that a single function can be used to perform different operations.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+DATE:- 01/08/2024
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+INHERITANCE:
+    -Deriving a new class by inheriting properties and methods of a old class is known as Inheritance.
+    -When we inherit parent class using child class then the object of child class must contain that data 
+     member and properties of parent class.
+    -Inheritance is a process of creating a new class from an existing class.
+    -It is a mechanism of creating a new class from an existing class.
+
+    Benefits:
+        -Inheritance helps to promote code reusability.
+        -Inheritance helps to reduce code duplication.
+
+    Base Class:
+        -The class from which we are inheriting is known as base class or parent class.
+    
+    Derived Class:
+        -The class which is inheriting is known as derived class or child class.
+
+    
+    Visibility Mode:
+
+        -Private inheritance:
+            -Private inheritance is used to inherit the properties of a class in a private manner.
+            -Private inheritance is used to hide the data of the base class.
+        
+        -Public inheritance:
+            -Public inheritance is used to inherit the properties of a class in a public manner.
+
+        -Protected inheritance:
+            -Protected inheritance is used to inherit the properties of a class in a protected manner.
+
+        class class_A{
+
+        };
+
+        class class_B: access_modifier class_A{
+
+        };
+
+        class class_C: access_modifier class_B{
+
+        };
+        
+
+
+        ____________________________________________________________________________________________
+        |                  |      Private          |      Protected          |         public       |
+        |------------------|-----------------------|-------------------------|----------------------|
+        |  class A         | visible               |       visible           |         visible      |
+        |------------------|-----------------------|-------------------------|----------------------|
+        |  class B         | not visible           |       visible           |         visible      |
+        |------------------|-----------------------|-------------------------|----------------------|
+        |  class C         | not visible           |       not visible       |         visible      |
+        |__________________|_______________________|_________________________|______________________|
+
+
+ 
+    Types of Inheritance:
+
+        1. Single Inheritance: In this type of inheritance, a class can inherit the properties
+        of only one class.
+
+        2. Multiple Inheritance: In this type of inheritance, a class can inherit the properties
+        of more than one class.
+
+        3. Multilevel Inheritance: In this type of inheritance, a class can inherit
+        the properties of a class which is inherited from another class.
+
+        4. Hierarchical Inheritance: In this type of inheritance, more than one class can
+        inherit the properties of a class.
+
+        5. Hybrid Inheritance(Diamond Problem): In this type of inheritance, a class can inherit the properties
+        of more than one class and also the properties of a class which is inherited from another class.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+DATE: 07/08/2024
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Function binding:
+    -In C++, function binding refers to the process of linking a function call to a specific function definition. 
+
+Function Hiding:
+    -Function hiding is a feature of C++ where a function in a derived class has the same name as a function in the base 
+    class but with a different return type or parameters. This is known as function hiding.
+
+Operator overloading:
+    -Operator overloading is a feature of C++ that allows us to redefine the behavior of operators when
+    they are used with user-defined data types.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+DATE: 08/08/2024
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Abstract Class:
+    -When at least one virtual function is derived inside Class, then it is called abstract class.
+    -Definition of each virtual function is must present inside their child class.
+
+Virtual Function:
+    -When function is defined using virtual keyword, then it is called Virtual function.
+
+Pure virtual function:
+    -When virtual function define using '=0;' then it is called pure virtual function.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+DATE: 12/08/2024
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Generic programming:
+    -Generic programming is a programming paradigm that allows for the creation of reusable code that can work with
+    different data types.
+
+Encapsulation:
+    In normal terms, Encapsulation is defined as wrapping up data and informat under a single unit.
+    Ex:
+      1. namespace
+      2. object of class
+      3. struct
+      4. <bits/stdc++.h>
+
+
+    Namespace: 
+        In c++ is use to bind some data inside single unit.
+        -to define namespace we need to use following Syntax:
+            namespace namespace_name{
+                //code
+            }
+
+        -we can create any number of functions and variables inside namespace.
+        -we can also create class inside namespace.
+        -we can also create alias name for namespace.(Alias name: Is a temp name which is created during runtime of a program
+         and destory after the execution of the program.)
+        -we can also create nested namespace.
+
+
+
+Templates:
+    -Templates are a feature of C++ that allows us to write generic code that can work with
+    different data types (independent of data_type).
+    -Templates are used to avoid code duplication and improve code reusability.
+
+    Syntax:
+        template <typename T1, typename  T2, .......> // T is a type parameter
+            class name{
+
+            }
+
+        template <class T1, class T2, .....>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+DATE: 13/08/2024
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+    - In two ways template are generally use in Cpp:
+        1. template function:
+            -Template function is a function that can work with different data types.
+        2. template class
+
+
+
+
+
+
+
+
+
+
+
+

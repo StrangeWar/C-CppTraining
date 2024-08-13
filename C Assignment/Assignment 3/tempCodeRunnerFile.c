@@ -1,0 +1,1 @@
+      printf("Apple left: %d\n", apple);
