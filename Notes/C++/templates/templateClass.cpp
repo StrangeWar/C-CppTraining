@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-template <typename T, typename U, typename X>
 
+template <typename T, typename U, typename X>
 class btech{
 
     T aa;
