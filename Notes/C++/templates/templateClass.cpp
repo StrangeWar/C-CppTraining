@@ -16,7 +16,7 @@ class btech{
             cc= c;
         }
 
-        print(){
+        void print(){
             cout<<aa<<endl;
             cout<<bb<<endl;
             cout<<cc<<endl;
