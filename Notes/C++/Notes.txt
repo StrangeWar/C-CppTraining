@@ -422,6 +422,15 @@ DATE: 13/08/2024
 DATE: 14/08/2024
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+String Class:
+    -String class is a class in C++ that is used to store and manipulate strings.
+    -String class is a part of the C++ Standard Template Library (STL).
+    -String class is used to store a sequence of characters.
+    -String class is used to perform various operations on strings such as concatenation, comparison, searching.
+    -String class is used to convert strings to other data types such as integers, floats, etc.
+    -String class is used to convert other data types to strings.
+
+    
 
 
 
