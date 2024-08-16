@@ -429,8 +429,33 @@ String Class:
     -String class is used to perform various operations on strings such as concatenation, comparison, searching.
     -String class is used to convert strings to other data types such as integers, floats, etc.
     -String class is used to convert other data types to strings.
+    -Memory management for string is by default, which is not valid in C language.
 
+    Syntax:
+        string str = "Hello, World!"; // declare a string variable and assign it a string
     
+    functions of String:
+        1. str.length(): Returns the length of the string.
+        2. str.size(): Returns the length of the string.
+        3. str.find(): Searches for a substring in the string and returns its position.
+        4. str.substr(): Returns a substring from the string.
+        5. str.replace(): Replaces a substring in the string with another substring.
+        6. str.insert(): Inserts a substring into the string.
+        7. str.erase(): Removes a substring from the string.
+        8. str.append(): use to concatenation to strings.
+        9. str.compare(): compares two strings.
+        10. getline(cin, var_name): use to take whole sentence as user input.
+        11. cin.ignore(): use to clear buffer.
+        12. str.reverse(): use to reverse string.
+        13. str.begin(): return reference of first index.
+        14. str.end(): return reference of last index.
+        15. str.front(): return value of first index.
+        16. str.back(): return value of last index.
+        17. str.empty(): return false if not empty.
+        18. str.clear(): clear string.
+        19. str.erase(): erase the string.
+        
+
 
 
 
