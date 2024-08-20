@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 
@@ -22,7 +23,8 @@ int main() {
     cout << "back(): " << x.back() << endl;
     cout << "begin(): " << *x.begin() << endl;
     cout << "end(): " << *(x.end()-1) << endl;
-
+    reverse(x.begin(), x.end());
+    cout << "reverse(): " << x << endl;
 
     return 0;
 }

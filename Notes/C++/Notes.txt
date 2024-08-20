@@ -460,11 +460,48 @@ String Class:
 DATE: 20/08/2024
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+EXCEPTION HANDLING:
+    -Exception handling is a mechanism to handle runtime errors in a program.
+    -Exception handling is used to prevent a program from crashing when an error occurs.
+
+    Error:
+        -Error are refer to issue in given code.
+        -Error are refer to unexpected behavior of the program.
+        
+        -They are mainly two types:
+            1. Syntax Error: These are errors that occur when the code is not written according to
+            the rules of the programming language. For example, a missing semicolon or a mismatched
+            bracket can cause a syntax error. It is also called Compile time error.
+            
+            2. Runtime Error: These are errors that occur when the code is executed. For example
+            a division by zero or an out-of-range array index can cause a runtime error. It is also called logical error.
 
 
+    Linker Error:
+        -Linker error are occur when the linker is unable to find the definition of a function or
+        variable that is being used in the program.
+    
 
+    Exception:
+        -Exception are refer to unexpected events that occur during the execution of a program.
+         which disrupts the normal flow of program.
 
+        -To solve exception error we use try, catach and throw blocks.
+
+            1.try{}:
+                -try block is used to enclose the code that might raise an exception.
+                -a program can contain any number of try block.
+                -It follow by one or more catch blocks.
+            
+            2.throw:
+                -throw keyword is used to raise an exception.
+                -throw keyword is used to pass an exception to the catch block.
+                -there is no concept of automatic throw unlike Java.
+            
+            3.catch:
+                -catch block is used to handle the exception.
+                -catch block is used to enclose the code that will be executed when an exception is raised.
+                -a program can contain any number of catch block.
 
 
 
