@@ -503,6 +503,13 @@ EXCEPTION HANDLING:
                 -catch block is used to enclose the code that will be executed when an exception is raised.
                 -a program can contain any number of catch block.
 
+            -The <stdexcept> header file in C++ is part of the C++ Standard Library and provides a set of 
+             standard exception classes.
+                -what()
+                -runtime_error()
+                -cin.fail()
+
+
 
 
 
