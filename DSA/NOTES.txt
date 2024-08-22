@@ -1,3 +1,7 @@
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 21/08/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
  DATA STRUCTURE:
     -Data Struture is about how data can be store and use in different Strutures.
 
@@ -23,3 +27,31 @@ ASYMPTOTIC NOTATIOIN:
         
         2. Space complexity: It is the amount of memory an algorithm takes to complete as a function of
            the size of the input.
+    
+        
+                                       COMPLEXITY OF PROGRAM
+
+      NOTATIOIN           |        NAME             |              DESCRIPTION
+      --------------------|-------------------------|-----------------------------------------------------------------------------------
+      O(1)                | Constant                | The time taken by the algorithm is constant and does
+                          |                         | not depend on the size of the input.
+      --------------------|-------------------------|-----------------------------------------------------------------------------------
+      O(log n)            | Logarithmic             | The time taken by the algorithm is proportional
+                          |                         | to the logarithm of the size of the input.
+      --------------------|-------------------------|-----------------------------------------------------------------------------------
+      O(n)                | Linear                  | The time taken by the algorithm is proportional
+                          |                         | to the size of the input.
+      --------------------|-------------------------|-----------------------------------------------------------------------------------
+      O(n log n)          | Linearithmic            | The time taken by the algorithm is
+                          |                         | proportional to the product of the size of the input and its logarithm
+      --------------------|-------------------------|-----------------------------------------------------------------------------------
+      O(n^2)              | Quadratic               | The time taken by the algorithm is proportional
+                          |                         | to the square of the size of the input.
+      --------------------|-------------------------|-----------------------------------------------------------------------------------
+      O(2^n)              | Exponential             | The time taken by the algorithm is proportional
+                          |                         | to 2 raised to the power of the size of the input.
+      --------------------|-------------------------|-----------------------------------------------------------------------------------
+      O(n!)               | Factorial               | The time taken by the algorithm is proportional
+                          |                         | to the factorial of the size of the input.
+      --------------------|-------------------------|-----------------------------------------------------------------------------------
+      
