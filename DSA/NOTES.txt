@@ -1,0 +1,25 @@
+ DATA STRUCTURE:
+    -Data Struture is about how data can be store and use in different Strutures.
+
+ALGORITHEM:
+    -Algorithm is a step-by-step procedure for solving a problem.
+
+ASYMPTOTIC NOTATIOIN:
+    -Asymptotic notation is used to describe the time and space complexity of an algorithm.
+
+    -There are mainly three type of notation:
+        1. Big O notation: It is used to describe the upper bound or wrost case of an algorithm's time or
+           space complexity.
+
+        2. Big Ω notation: It is used to describe the lower bound of an algorithm's time or
+           space complexity.
+
+        3. Big Θ notation: It is used to describe the exact time or space complexity of an algorithm.
+
+
+    -There are mainly two types of complexity for any program:
+        1. Time complexity: It is the amount of time an algorithm takes to complete as a function of
+           the size of the input.
+        
+        2. Space complexity: It is the amount of memory an algorithm takes to complete as a function of
+           the size of the input.
