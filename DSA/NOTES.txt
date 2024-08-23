@@ -55,3 +55,36 @@ ASYMPTOTIC NOTATIOIN:
                           |                         | to the factorial of the size of the input.
       --------------------|-------------------------|-----------------------------------------------------------------------------------
       
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 22/08/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+LINKED LIST:
+   -A linked list is a linear data structure where each element is a separate object, known as a node.
+   -Linklist nodes are randomly stored in the memory.
+   -link field of Linklist is of self reerential type.
+
+   -Each node contains two items:
+      1. The data, and
+      2. A reference (or link) to the next node in the sequence.
+
+      -------    -------    -------    ---------
+      |10|1k|--->|20|2k|--->|30|3k|--->|40|NULL|
+      -------    -------    -------    ---------
+
+   LinkedList over Array:
+   
+      -Dynamic memory allocation: Linked list can grow or shrink as needed.
+      -Insertion and deletion: Linked list allows for efficient insertion and deletion of nodes at any position.
+      -Memory usage: Linked list uses more memory than arrays because each node has a reference to the
+       next node.
+      -Random access: Linked list does not support random access, you have to traverse the list from
+       the beginning to access a specific node.
+      -Cache performance: Linked list can have poor cache performance because the memory is not contiguous.
+      -Traversal: Linked list can be traversed in both forward and backward directions.
+      -Search: Linked list can be searched in both forward and backward directions.
+      -Sorting: Linked list can be sorted in both forward and backward directions.
+      -Reversing: Linked list can be reversed in both forward and backward directions.
+   
+
