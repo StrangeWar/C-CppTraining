@@ -60,7 +60,7 @@ ASYMPTOTIC NOTATIOIN:
  DATE: 22/08/2024
  -----------------------------------------------------------------------------------------------------------------------------------------------
 
-LINKED LIST:
+LINKEDLIST:
    -A linked list is a linear data structure where each element is a separate object, known as a node.
    -Linklist nodes are randomly stored in the memory.
    -link field of Linklist is of self reerential type.
@@ -88,3 +88,16 @@ LINKED LIST:
       -Reversing: Linked list can be reversed in both forward and backward directions.
    
 
+DOUBLY LINKEDLIST:
+   -A doubly linked list is a type of linked list in which each node has two pointers,
+      one pointing to the next node and the other pointing to the previous node.
+   -This allows for efficient insertion and deletion of nodes at any position in the list.
+   -It also allows for traversal in both forward and backward directions.
+   -It is used in many applications such as database systems, file systems, and memory management.
+
+CIRCULAR LINKEDLIST:
+   -A circular linked list is a type of linked list in which the last node points back to
+   the first node, forming a circle.
+   -It is used in many applications such as circular buffers, circular queues, and
+   circular stacks.
+   

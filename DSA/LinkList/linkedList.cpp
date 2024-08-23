@@ -29,12 +29,24 @@ void createNode(List* &node, int val){
 }
 
 
-void createNodeAtBeg(List* &node, int val){
+void insertAtBeg(List* &node, int val){
 
     List* newNode = new List(val);
     newNode->link = node;
     node = newNode;
 
+}
+
+void insertAtPos(List*& node, int val, int pos){
+    List* newNode = new List(val);
+    int i = 0;
+    List* temp = node;
+    while(i != pos-1){
+        temp = temp->link;
+        }
+        newNode->link = temp->link;
+        
+    }
 }
 
 void deleteNode(List* node, int key){
@@ -89,7 +101,7 @@ int main() {
     createNode(head, 20);
     createNode(head, 30);
     createNode(head, 40);
-    createNodeAtBeg(head, 0);
+    insertAtBeg(head, 0);
     print(head);
 
     deleteNode(head, 20);
