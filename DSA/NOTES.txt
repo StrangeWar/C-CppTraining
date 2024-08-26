@@ -88,6 +88,11 @@ LINKEDLIST:
       -Reversing: Linked list can be reversed in both forward and backward directions.
    
 
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 23/08/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 DOUBLY LINKEDLIST:
    -A doubly linked list is a type of linked list in which each node has two pointers,
       one pointing to the next node and the other pointing to the previous node.
@@ -95,9 +100,46 @@ DOUBLY LINKEDLIST:
    -It also allows for traversal in both forward and backward directions.
    -It is used in many applications such as database systems, file systems, and memory management.
 
+
 CIRCULAR LINKEDLIST:
    -A circular linked list is a type of linked list in which the last node points back to
    the first node, forming a circle.
    -It is used in many applications such as circular buffers, circular queues, and
    circular stacks.
    
+VECTOR: 
+   -A vector is a dynamic array that can grow or shrink as needed.
+   -It is used to store a collection of elements of the same data type.
+   -It is implemented as a contiguous block of memory.
+   -Vector is define inside <vector> header file.
+   -Vector is a part of C++ Standard Template Library (STL).
+   -Vector is based on last in first out (LIFO) algorithm.
+
+   Pre-defind methods of vector:
+      -push_back(): Adds an element to the end of the vector.
+      -pop_back(): Removes the last element from the vector.
+      -insert(): Inserts an element at a specified position in the vector.
+      -erase(): Removes an element at a specified position in the vector.
+      -size(): Returns the number of elements in the vector.
+      -capacity(): Returns the maximum number of elements the vector can hold.
+      -empty(): Checks if the vector is empty.
+      -at(): Returns the element at a specified position in the vector.
+      -front(): Returns the first element in the vector.
+      -back(): Returns the last element in the vector.
+      -begin(): Returns an iterator(reference) pointing to the first element in the vector.
+      -end(): Returns an iterator pointing(reference) to the end of the vector.
+      -clear(): Removes all elements from the vector.
+      -resize(): Changes the size of the vector to a specified value.
+      -reserve(): Changes the capacity of the vector to a specified value.
+      -swap(): interchange all elements of two vectors.
+   
+      -Vector is class template inside memory, therefore sizeof() operator return the size of class vector.
+
+PAIRS:
+   -A pair is a class template that represents a collection of two values.
+   -It is used to store two values of different data types.
+   
+   Syntax:
+      pair <data_type, data_type> p;
+
+   -we can create array of pairs to store some number of data inside it.

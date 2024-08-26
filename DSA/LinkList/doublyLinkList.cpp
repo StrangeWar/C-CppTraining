@@ -43,11 +43,12 @@ void insertAtbeg(DoublyList*& head, int val){
 void insertAtend(DoublyList*& head, int val){
     DoublyList* newNode = new DoublyList(val);
     DoublyList* temp = head;
-    while(temp->next->next != NULL){
+
+    while(temp->next != NULL){
         temp = temp->next;
     }
-    newNode->prev = temp;
     temp->next = newNode;
+    newNode->prev = temp;
 
 }
 
@@ -56,7 +57,7 @@ void insertAtPos(DoublyList*& head, int val, int pos){
     DoublyList* newNode = new DoublyList(val);
     int i = 0;
     DoublyList* temp = head;
-    while (i < pos - 1 && temp != NULL) {
+    while (i != pos-1  && temp != NULL) {
         temp = temp->next;
         i++;
     }
@@ -65,6 +66,54 @@ void insertAtPos(DoublyList*& head, int val, int pos){
     temp->next->prev = newNode;
     temp->next = newNode;
     newNode->prev = temp;
+}
+
+void deleteHead(DoublyList*& head){
+
+    if(head == NULL){
+        cout<<"List is empty"<<endl;
+        return;
+    }
+
+    DoublyList* temp = head;
+
+    head = head->next;
+    if(head != NULL){
+        head->prev = NULL;
+    }
+
+    delete temp;
+
+    
+}
+
+void deleteTail(DoublyList*& head){
+    DoublyList* temp = head;
+    while(temp->next->next != NULL){
+
+        temp = temp->next;
+        
+    }
+
+    temp->next = NULL;
+}
+
+
+void deleteAtPos(DoublyList*& head, int pos){
+    DoublyList* temp = head;
+    DoublyList* previous = NULL;
+
+    int i = 0;
+
+    while(temp != NULL && i!=pos-1){
+        previous = temp;
+        temp = temp->next;
+        i++;
+    }
+
+    previous->next = temp->next;
+    temp->next->prev = previous;
+    delete temp;
 }
 
 
@@ -89,20 +138,29 @@ int main() {
 
     DoublyList* head = NULL;
 
-    createNode(head, 10);
     createNode(head, 20);
     createNode(head, 30);
     print(head);
 
-    insertAtbeg(head, 90);
-    insertAtbeg(head, 100);
+    insertAtbeg(head, 10);
     print(head);
 
-    insertAtend(head, 1000);
+    insertAtend(head, 50);
+    insertAtend(head, 60);
     print(head);
 
-    insertAtPos(head, 128, 3);
+    insertAtPos(head, 40, 3);
     print(head);
+
+    deleteHead(head);
+    print(head);
+
+    deleteAtPos(head, 3);
+    print(head);
+
+    deleteTail(head);
+    print(head);
+
 
     return 0;
 }

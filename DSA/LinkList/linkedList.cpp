@@ -47,7 +47,6 @@ void insertAtPos(List*& node, int val, int pos){
         newNode->link = temp->link;
         
     }
-}
 
 void deleteNode(List* node, int key){
 
