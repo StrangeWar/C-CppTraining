@@ -1,11 +1,12 @@
-#include <iostream>
+#include<bits/stdc++.h>
+
 using namespace std;
 
-void func();
 
-int main() {
 
-    func();  
+int main(){
+
+    cout<<pow(6 ,0.5);
 
     return 0;
 }

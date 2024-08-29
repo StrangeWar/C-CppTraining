@@ -99,6 +99,9 @@ DOUBLY LINKEDLIST:
    -This allows for efficient insertion and deletion of nodes at any position in the list.
    -It also allows for traversal in both forward and backward directions.
    -It is used in many applications such as database systems, file systems, and memory management.
+   -The node containing NULL at there "next" field that is called Tail of list.
+   -The node containing NULL at there "previous" field that is called Head of list.
+
 
 
 CIRCULAR LINKEDLIST:
@@ -106,6 +109,7 @@ CIRCULAR LINKEDLIST:
    the first node, forming a circle.
    -It is used in many applications such as circular buffers, circular queues, and
    circular stacks.
+
    
 VECTOR: 
    -A vector is a dynamic array that can grow or shrink as needed.
@@ -143,3 +147,109 @@ PAIRS:
       pair <data_type, data_type> p;
 
    -we can create array of pairs to store some number of data inside it.
+
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 27/08/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+STACK:
+   -A stack is a linear data structure that follows the LIFO (Last In First Out).
+   -It is a type of abstract data type (ADT) that uses the principle of last in
+    first out to access the elements.
+   -Stack is a collection of elements that are added and removed from the top of the stack.
+   -Stack is a part of C++ Standard Template Library (STL).
+   -Stack is implemented as a class template inside <stack> header file.
+   -Stack is a dynamic data structure that can grow or shrink as needed.
+   -Stack is a non-associative data structure, meaning that the order of elements is
+    not preserved.
+    
+   Main operations:
+      -push(): Adds an element to the top of the stack.
+      -pop(): Removes an element from the top of the stack.
+      -top(): Returns the element at the top of the stack.
+      -size(): Return size of stack.
+      -empty(): Checks if the stack is empty.
+
+
+
+
+   Example:
+      -Recursion
+      -Function calls
+      -Undo and redo operations
+      -Evaluation of postfix expressions
+      -Evaluation of infix expressions
+      -Evaluation of prefix expressions
+
+
+POLISH NOTATIOIN:
+   -Polish notation is a notation in which operators are written before their operands.
+   -This notation was introduced by the polish mathematician Lukasiewicz.
+   -Polish notation is also known as prefix notation.
+   -Polish notation is used to evaluate expressions in a left-to-right order.
+
+   There are three types of polish notation:
+      1. Prefix notation: In this notation, operators are written before their operands.
+         Example:
+          ab
+          +ab*C
+
+      2. Infix notation: In this notation, operators are written between their operands.
+         Example:
+          a + b   
+          a + b * c
+
+      3. Postfix notation: In this notation, operators are written after their operands.
+         Example:
+          ab+
+          abc*-
+          abc*/
+
+
+      operators       |        Precedence         |         Associativity
+      ----------------|---------------------------|-------------------------
+      (), [], {}      |        4                  |        Left to Right
+      ^               |        3                  |        Left to Right
+      * , /           |        2                  |        Left to Right
+      + , -           |        1                  |        Left to Right
+
+   
+   Operands:
+      -Operands are the values that are used in an expression.
+      -Operands can be numbers, variables, or expressions.
+      Example:
+         (3, 4, 5)
+         (x, y, z)
+   Operators:
+      -Operators are the symbols that are used to perform operations on operands.
+      -Operators can be unary or binary.
+      Example:
+         (+, -, *, /, %, etc)
+   
+      
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 29/08/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+Rule to convert Infix to Postfix:
+   1. No two operators with same precedence are stay together in stack.
+   2. Operators with lower precedence can not stay after the operator with higher precedence.
+
+   Example:
+      + * this is valid
+      * + this is not valid
+      * ^ this is valid
+
+QUEUE:
+   -A queue is a linear data structure that follows the FIFO (First-In-First-Out) principle.
+   -Elements are added to the end of the queue and removed from the front of the queue.
+   -Queue is used to implement the postfix notation of an expression.
+   
+   Example:
+      -Process scheduling
+      -Job scheduling
+      -Network routing
+      
+
