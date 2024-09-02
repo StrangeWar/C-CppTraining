@@ -246,10 +246,31 @@ QUEUE:
    -A queue is a linear data structure that follows the FIFO (First-In-First-Out) principle.
    -Elements are added to the end of the queue and removed from the front of the queue.
    -Queue is used to implement the postfix notation of an expression.
-   
    Example:
       -Process scheduling
       -Job scheduling
       -Network routing
+
+
+   Operations in Queue:
+
+      Enqueue:
+         -Add an element to the end of the queue.
+         -This is perform by push().
       
+      Dequeue:
+         -Remove an element from the front of the queue.
+         -This is perform by pop().
+
+      front() or peek():
+         -Return the element at the front of the queue without removing it.
+      
+      back():
+         -Return the element at the end of the queue without removing it.
+      
+      
+
+
+   
+
 
