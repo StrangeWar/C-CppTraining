@@ -269,8 +269,38 @@ QUEUE:
          -Return the element at the end of the queue without removing it.
       
       
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 02/09/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+DOUBLE ENDEND QUEUE:
+   -A double-ended queue is a queue that allows elements to be added or removed from both ends
+   -It is also known as a deque
+   -It is implemented using a doubly linked list
+   -It supports the following operations:
+      -bool isFull();
+      -bool isEmpty();
+      -void enqueueFront();
+      -void enqueueRear();
+      -void dequeueFront();
+      -void dequeueRear();
+      -int getFront();
+      -int getRear();
 
 
+
+CIRCULAR QUEUE:
+   -A circular queue is a type of queue where the last element is connected to the first element.
+   -It is also known as a ring buffer.
+   -It is used when the size of the queue is fixed and we want to reuse the space when
+    the queue is empty.
+
+   Enqueue: r = (r + 1) % SIZE
+   Dequeue: f = (f + 1) % SIZE
+      where r is the rear index and f is the front index.
    
+
+RECURSION:
+   -Recursion is a programming technique where a function calls itself repeatedly until it reaches a base case.
 
 
