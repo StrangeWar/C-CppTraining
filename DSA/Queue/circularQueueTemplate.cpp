@@ -129,7 +129,7 @@ int main() {
 
 
     circularQueue <string> q1;
-    q1.enqueue("vivke");
+    q1.enqueue("vivek");
     q1.enqueue("ayush");
     q1.enqueue("ritik");
     q1.enqueue("sobhit");
