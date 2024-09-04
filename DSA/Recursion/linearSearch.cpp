@@ -53,12 +53,12 @@ int main() {
     cout<<endl<<endl;
 
     cout << "Linear Search: "<<endl;
-    cout << "Position of element in the array is: " <<linearSearch(arr, 90, 10)<<endl<<endl;
+    cout << "Position of element in the array is: " <<linearSearch(arr, 200, 10)<<endl<<endl;
 
 
     cout << "Binary Search:"<<endl;
 
-    cout<<"Position of element in the array is: " << bineary_search(arr, 90, 0, 10);
+    cout<<"Position of element in the array is: " << bineary_search(arr, 200, 0, 10);
 
 
     return 0;
