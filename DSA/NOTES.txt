@@ -331,3 +331,63 @@ MAPPING:
          7. size(): return no. of values inside map.
          8. at(): it return the value as per you pass the key pair.
          9. clear(): it remove all values of map.
+
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 04/09/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+TREE:
+   -A tree is a hierarchial data structure in which each node has a value and zero or more child.
+   -It is a non-linear data structure.
+   -It is used to represent a hierarchical relationship between elements.
+   -It is used to store data in a way that allows for efficient searching, insertion, and deletion.
+
+                                   O
+                                  / \
+                                 A   B
+                                / \ / \
+                               C  D E  F
+                                 
+   -In the above tree, 'O' is the root node, 'A', 'B', 'C', 'D', 'E', 'F' are child nodes of 'O'.
+
+   1.Binary Tree:
+      -A binary tree is a tree in which each node has at most two child nodes.
+      -It is a type of tree data structure in which each node has a value and at most
+      -It is used to represent a hierarchical relationship between elements.
+
+                                   O
+                                  / \
+                                 A   B
+                                / \ / \
+                               C  D E  F
+      
+      Node:
+         -Each element of a tree is called node. Each node contains data part and reference of there child.
+      
+      Root:
+         -The topmost node of a tree is called root. It is only node which have no parent node.
+
+      Edge:
+         -Connection between two nodes is called Edge. An edge connect parent node to child node.
+
+      Child:
+         -The node which is connected to parent node by edge is called child.
+      
+      Parent:
+         -The node that has one or more child nodes is called parent node.
+
+      Leaf:
+         -The node which do not have any child is called leaf node.
+
+      Subtree:
+         -A tree which is a part of another tree is called subtree.
+
+      Depth:
+         -The number of edges between root and node is called depth of node.
+      
+      Height:
+         -The number of edges between root and leaf node is called height of tree.
+      
+      Level:
+         -The level of a node is the number of edges on the path from the root to the node.

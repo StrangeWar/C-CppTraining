@@ -7,7 +7,10 @@ class node{
     node* left, *right;
 
     node(int val):data(val), left(NULL), right(NULL){};
+
 };
+
+
 
 int main() {
 
