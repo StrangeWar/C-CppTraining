@@ -304,3 +304,30 @@ RECURSION:
    -Recursion is a programming technique where a function calls itself repeatedly until it reaches a base case.
 
 
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 03/09/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+MAPPING:
+   -A mapping is a data structure that stores key-value pairs.
+   -It is also known as a dictionary or hash table.
+   -It is implemented using a hash table.
+   
+   Hash Map:
+      -A hash map is a type of mapping that uses a hash function to map keys to indices.
+      -It allow fast retrevial of values based on their asspociated keys.
+      -In cpp hashmap is implemented by unordered_map.
+      -The avg time complexity for insertion, deletion and lookup in std::unordered_map is O(1).
+      -To use unordered_map we need to include <unordered_map> header file which is part of std container.
+      
+      Map function:
+         1. insert(): It insert value inside a map.
+         2. make_pair(): it create pair of values.
+         3. begin(): it return reference of 0th index.
+         4. ead(): it return reference of end index.
+         5. find(): it return the reference where the key value if found.
+         6. count(): it return '1' in case of keypair is pesent otherwise return '0'.
+         7. size(): return no. of values inside map.
+         8. at(): it return the value as per you pass the key pair.
+         9. clear(): it remove all values of map.
