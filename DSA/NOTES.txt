@@ -391,3 +391,23 @@ TREE:
       
       Level:
          -The level of a node is the number of edges on the path from the root to the node.
+
+      Traversing in Binary Tree:
+         
+
+         1.DFS(Depth-First-Search):
+            -It is a traversal technique in which we start from root node and traverse as far as possible down the tree along    each branch before backtracking.
+            -It is used to traverse the tree in depth-first manner.
+            -It use stack data structure.
+
+            Preorder Traversal: Root, Left subtree, Right subtree
+            Inorder Traversal: Left subtree, Root, Right subtree
+            Postorder Traversal: Left subtree, Right subtree, Root
+      
+         2.BFS(Breath-First-Search):
+            -It is a traversal technique in which we start from root node and traverse all the nodes at current level before moving to next level.
+            -It is used to traverse the tree in breadth-first manner.
+            -It use queue data structure.
+
+            Level Order Traversal:
+            

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 class node
@@ -10,37 +11,62 @@ public:
     node(int val) : data(val), left(NULL), right(NULL) {};
 };
 
-void print_preorder(node *root)
+void preorder(node *root)
 {
     if (root == NULL)
         return;
 
     cout << root->data << " ";
-    print_preorder(root->left);
-    print_preorder(root->right);
+    preorder(root->left);
+    preorder(root->right);
 }
 
-void print_inorder(node *root)
+void inorder(node *root)
 {
     if (root == NULL)
         return;
 
-    print_inorder(root->left);
+    inorder(root->left);
     cout << root->data << " ";
-    print_inorder(root->right);
+    inorder(root->right);
 }
 
-void print_postorder(node *root)
+void postorder(node *root)
 {
     if (root == NULL)
         return;
 
-    print_postorder(root->left);
-    print_postorder(root->right);
+    postorder(root->left);
+    postorder(root->right);
     cout << root->data << " ";
+}
+
+void levelorder(node *root)
+{
+    queue<node *> q;
+    q.push(root);
+
+    while (!q.empty())
+    {
+        node *temp = q.front();
+        cout << temp->data << " ";
+        q.pop();
+
+        if (temp->left)
+        {
+            q.push(temp->left);
+        }
+
+        if (temp->right)
+        {
+            q.push(temp->right);
+
+        }
+    }
 }
 
 int main()
+
 {
 
     node *root = new node(10);
@@ -52,17 +78,24 @@ int main()
     root->right->right = new node(70);
 
     cout << "Pre-order: " << endl;
-    print_preorder(root);
+    preorder(root);
 
-    cout << endl;
+    cout << endl
+         << endl;
 
     cout << "In-order: " << endl;
-    print_inorder(root);
+    inorder(root);
 
-    cout << endl;
+    cout << endl
+         << endl;
 
     cout << "Post-order: " << endl;
-    print_postorder(root);
+    postorder(root);
 
+    cout << endl
+         << endl;
+
+    cout << "Level-order: " << endl;
+    levelorder(root);
     return 0;
 }
