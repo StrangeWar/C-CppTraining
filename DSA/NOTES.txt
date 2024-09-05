@@ -410,4 +410,10 @@ TREE:
             -It use queue data structure.
 
             Level Order Traversal:
+               Level Order Traversal is a tree traversal algorithm that visits all the nodes at a given depth level before moving on to the next level.
             
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+ DATE: 05/09/2024
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
