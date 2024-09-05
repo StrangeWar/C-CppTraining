@@ -417,3 +417,55 @@ TREE:
  DATE: 05/09/2024
  -----------------------------------------------------------------------------------------------------------------------------------------------
 
+BINARY SEARCH TREE:
+   -A binary search tree is a binary tree in which each node has a comparable value.
+   -For any given node, all elements in its left subtree are less than the node, and all elements in its right subtree are greater than the node.
+   -It is used to store data in a way that allows for efficient searching, insertion, and deletion.
+
+   Properties of Binary Search Tree:
+
+      1. All elements in the left subtree of a node are less than the node.
+      2. All elements in the right subtree of a node are greater than the node.
+      3. For any node, all elements in its left subtree and right subtree must also follow the above two properties.
+
+   Operations on Binary Search Tree:
+
+      1. Insertion: Inserting a new node into the tree while maintaining the properties of the binary search tree.
+      2. Deletion: Deleting a node from the tree while maintaining the properties of the binary search tree.
+      3. Searching: Searching for a specific value in the tree.
+      4. Traversal: Traversing the tree in a specific order (e.g., inorder, preorder, postorder).
+
+   Advantages of Binary Search Tree:
+
+      1. Efficient searching: Binary search trees allow for efficient searching with an average time complexity of O(log n).
+      2. Efficient insertion and deletion: Binary search trees allow for efficient insertion and deletion with an average time complexity of O(log n).
+      3. Space efficiency: Binary search trees can store a large number of elements in a relatively small amount of space.
+
+   Disadvantages of Binary Search Tree:
+
+      1. Complexity: Binary search trees can be complex to implement and maintain.
+      2. Balancing: Binary search trees can become unbalanced, leading to poor performance.
+      3. Limited scalability: Binary search trees can become too large to fit in memory, leading to disk I/O and performance issues.
+
+   Types of Binary Search Trees:
+
+      1. AVL Tree: A self-balancing binary search tree that ensures the height of the tree remains relatively small.
+      2. Red-Black Tree: A self-balancing binary search tree that ensures the height of the tree remains relatively small.
+      3. Splay Tree: A self-balancing binary search tree that moves frequently accessed elements to the root of the tree.
+      4. B-Tree: A self-balancing binary search tree that keeps data sorted and allows for efficient insertion and deletion.
+      
+
+
+Characteristics          |  	         Binary Search	                     |               Binary Search Tree                  
+-------------------------|-------------------------------------------------|---------------------------------------------------
+Data Structure           |              	Array                            |                  	Tree
+Search Method	          |            Iterative or Recursive	            |                       Recursive
+Time Complexity	       |                O(log n)	                        |         O(log n) (average), O(n) (worst)
+Space Complexity         |                 O(1)	                           |                       O(n)
+Insertion/Deletion	    |              Not applicable	                  |            O(log n) (average), O(n) (worst)
+Search Requirements	    |              Sorted array	                     |                  Balanced tree
+Implementation	          |           Simple to implement	                  |            More complex to implement
+Use Cases	             |     Searching for an element in a sorted array	|   Searching, inserting, and deleting elements
+                         |                                                 |                 in a dynamic dataset
+
+
