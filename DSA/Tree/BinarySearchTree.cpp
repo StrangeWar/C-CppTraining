@@ -61,6 +61,38 @@ int search(Node* root, int val){
 
 }
 
+int height(Node* root){
+    if(root == NULL){
+        return 0;
+        }
+    int lh = height(root->left);
+    int rh = height(root->right);
+
+    if(abs(lh - rh) > 1){
+        return false;
+    }
+    else{
+        return true;
+    }
+
+}
+
+bool isBalanced(Node* root){
+    if(root == NULL){
+        return false;
+    }
+
+    if(isBalanced(root->left) == false){
+        return false;
+    }
+    if(isBalanced(root->right) == false){
+        return false;
+    }
+
+
+}
+
+
 int main() {
     
     int arr[5] = {20, 12, 40, 45, 60};
@@ -81,6 +113,8 @@ int main() {
 
     cout<< "Element found: " << (search(root, 40)?"True":"False") << endl;
     cout<< "Element found: " << (search(root, 87)?"True":"False") << endl;
+
+    cout << "Is Balanced: " << (isBalanced(root)?"Ture":"False")<<endl;
 
     
     return 0;

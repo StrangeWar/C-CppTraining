@@ -467,5 +467,61 @@ Search Requirements	    |              Sorted array	                     |      
 Implementation	          |           Simple to implement	                  |            More complex to implement
 Use Cases	             |     Searching for an element in a sorted array	|   Searching, inserting, and deleting elements
                          |                                                 |                 in a dynamic dataset
+-------------------------------------------------------------------------------------------------------------------------------
 
 
+Balanced Tree:
+   A balanced binary search tree is a tree in which the height of the left and right subtrees
+   of every node differs by at most one.
+
+AVL TREE:
+   -An AVL tree is a self-balancing binary search tree that ensures the height of the tree remains relatively small.
+   -It is a type of binary search tree that automatically balances itself to maintain a balance between the height of the left and right subtrees.
+   -It is used to store data in a way that allows for efficient searching, insertion, and deletion.
+   -AVL tree is named after its inventors, Adelson-Velskii and Landis.
+   -Balanced factor of each node must be -1, 0, 1.
+
+   Properties of AVL Tree:
+
+      1. The height of the left and right subtrees of every node differs by at most one.
+      2. The left subtree of a node contains only keys less than the node's key.
+      3. The right subtree of a node contains only keys greater than the node's key.
+
+   Operations on AVL Tree:
+
+      1. Insertion: Inserting a new node into the tree while maintaining the balance of the tree.
+      2. Deletion: Deleting a node from the tree while maintaining the balance of the tree.
+      3. Searching: Searching for a specific value in the tree.
+      4. Traversal: Traversing the tree in a specific order (e.g., inorder, preorder, postorder).
+
+   Balancing Factor:
+
+      -The balancing factor of a node is the difference between the height of its left subtree and the height of its right subtree.
+      -If the balancing factor of a node is greater than 1, the tree is unbalanced and needs to be rotated.
+
+   Rotation:
+
+      -Rotation is the process of rearranging the nodes of the tree to balance it.
+      -There are two types of rotation: left rotation and right rotation.
+
+   Advantages of AVL Tree:
+
+      1. Efficient searching: AVL trees allow for efficient searching with an average time complexity of O(log n).
+      2. Efficient insertion and deletion: AVL trees allow for efficient insertion and deletion with an average time complexity of O(log n).
+      3. Space efficiency: AVL trees can store a large number of elements in a relatively small amount of space.
+
+   Disadvantages of AVL Tree:
+
+      1. Complexity: AVL trees can be complex to implement and maintain.
+      2. Limited scalability: AVL trees can become too large to fit in memory, leading to disk I/O and performance issues.
+
+   Example of AVL Tree:
+
+             10
+            /  \
+           5    15
+          / \   / \
+         2   7 12  18
+
+   In this example, the AVL tree is balanced, and the height of the left and right subtrees of every node differs by at most one.
+   
