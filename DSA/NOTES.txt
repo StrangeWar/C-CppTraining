@@ -459,9 +459,9 @@ BINARY SEARCH TREE:
 Characteristics          |  	         Binary Search	                     |               Binary Search Tree                  
 -------------------------|-------------------------------------------------|---------------------------------------------------
 Data Structure           |              	Array                            |                  	Tree
-Search Method	          |            Iterative or Recursive	            |                       Recursive
+Search Method	          |            Iterative or Recursive	            |                  Recursive
 Time Complexity	       |                O(log n)	                        |         O(log n) (average), O(n) (worst)
-Space Complexity         |                 O(1)	                           |                       O(n)
+Space Complexity         |                 O(1)	                           |                     O(n)
 Insertion/Deletion	    |              Not applicable	                  |            O(log n) (average), O(n) (worst)
 Search Requirements	    |              Sorted array	                     |                  Balanced tree
 Implementation	          |           Simple to implement	                  |            More complex to implement
