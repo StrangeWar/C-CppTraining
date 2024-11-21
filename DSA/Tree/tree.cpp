@@ -11,6 +11,8 @@ public:
     node(int val) : data(val), left(NULL), right(NULL) {};
 };
 
+      
+
 void preorder(node *root)
 {
     if (root == NULL)

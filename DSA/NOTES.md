@@ -392,6 +392,15 @@ TREE:
       Level:
          -The level of a node is the number of edges on the path from the root to the node.
 
+      Degree:
+         The degree of a node in a tree is the number of edges that connect to it. In other
+         words, it is the number of children a node has.
+         In a binary tree, the degree of a node can be either 0, 1, or
+         2. If a node has no children, its degree is 0. If a node has one
+         child, its degree is 1. If a node has two children, its degree is 2.
+
+
+
       Traversing in Binary Tree:
          
 
@@ -411,6 +420,9 @@ TREE:
 
             Level Order Traversal:
                Level Order Traversal is a tree traversal algorithm that visits all the nodes at a given depth level before moving on to the next level.
+
+               time complexity of level order traversal:
+               O(n) where n is the number of nodes in the tree
             
 
  -----------------------------------------------------------------------------------------------------------------------------------------------
@@ -525,3 +537,31 @@ AVL TREE:
 
    In this example, the AVL tree is balanced, and the height of the left and right subtrees of every node differs by at most one.
    
+
+
+  Segment Tree:
+  -------------
+
+  A segment tree is a binary tree where each node represents a segment of the array.
+  Each node has two children, a left child and a right child, and each child represents
+  a segment of the array that is a subset of the segment represented by its parent.
+
+  Example:
+  ---------
+  Suppose we have an array of integers: [1, 3, 5, 7, 9, 11]
+
+  The segment tree for this array would be:
+
+          [1, 11]
+         /       \
+    [1, 7]       [7, 11]
+    /     \       /     \
+  [1, 3] [3, 7] [7, 9] [9, 11]
+  / \   / \   / \   / \
+ [1] [3] [5] [7] [9] [11]
+
+  In this example, each node represents a segment of the array. The root node represents
+  the entire array, and each child node represents a smaller segment of the array.
+
+  The segment tree can be used to perform range queries, such as finding the sum of all
+  elements in a given range, or finding the maximum element in a given range.
