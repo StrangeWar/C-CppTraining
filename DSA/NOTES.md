@@ -546,22 +546,24 @@ AVL TREE:
   Each node has two children, a left child and a right child, and each child represents
   a segment of the array that is a subset of the segment represented by its parent.
 
-  Example:
-  ---------
-  Suppose we have an array of integers: [1, 3, 5, 7, 9, 11]
 
-  The segment tree for this array would be:
-
-          [1, 11]
-         /       \
-    [1, 7]       [7, 11]
-    /     \       /     \
-  [1, 3] [3, 7] [7, 9] [9, 11]
-  / \   / \   / \   / \
- [1] [3] [5] [7] [9] [11]
-
-  In this example, each node represents a segment of the array. The root node represents
-  the entire array, and each child node represents a smaller segment of the array.
 
   The segment tree can be used to perform range queries, such as finding the sum of all
   elements in a given range, or finding the maximum element in a given range.
+
+GRAPH:
+----------------
+   A graph is a non-linear data structure consisting of nodes or vertices connected by edges.
+   Each node in a graph may have multiple edges connected to it, and each edge may connect a node
+   to one or more other nodes.
+
+   Travesals:
+   1. Depth First Traversal (DFS): This traversal starts at the root node and explores
+   as far as possible along each branch before backtracking. 
+
+
+   2. Breadth First Traversal (BFS): This traversal starts at the root node
+   and explores all the nodes at the present depth prior to moving on to nodes at the next depth
+   level.
+      
+

@@ -68,5 +68,8 @@ int main() {
     st.build(arr);
     cout << st.query(0, 4) << endl;
 
+    st.update(3, 6);
+    cout << st.query(0, 4) << endl;
+
     return 0;
 }
