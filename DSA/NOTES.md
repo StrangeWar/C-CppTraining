@@ -565,5 +565,11 @@ GRAPH:
    2. Breadth First Traversal (BFS): This traversal starts at the root node
    and explores all the nodes at the present depth prior to moving on to nodes at the next depth
    level.
-      
+
+
+What is trie:
+----------------
+A trie, also known as a prefix tree, is a tree-like data structure in which each node
+is associated with a string. Tries are often used to store a dynamic set or associative array
+where the keys are usually strings.
 
